@@ -1,7 +1,19 @@
-# Type 6 Quantum-Bound Molecular Generator (QBMG)
+<h1 align="center">Type 6 Quantum-Bound Molecular Generator (QBMG)</h1>
 
-> A fully differentiable, embedded neuro-symbolic architecture for zero-waste molecular generation.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/PyTorch-2.0+-EE4C2C" alt="PyTorch 2.0+">
+  <img src="https://img.shields.io/badge/CVXPY-1.3+-9C27B0" alt="CVXPY 1.3+">
+  <img src="https://img.shields.io/badge/diffcp-1.0.22+-FF9800" alt="diffcp 1.0.22+">
+  <img src="https://img.shields.io/badge/cvxpylayers-0.1+-4CAF50" alt="cvxpylayers">
+  <img src="https://img.shields.io/badge/CUDA-11.8+-76B900" alt="CUDA 11.8+">
+  <img src="https://img.shields.io/badge/pytest-7.0+-0A9EDC" alt="pytest 7.0+">
+  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License MIT">
+</p>
 
+<p align="center">
+  <b>A fully differentiable, embedded neuro-symbolic architecture for zero-waste molecular generation.</b>
+</p>
 ---
 
 ## Overview
