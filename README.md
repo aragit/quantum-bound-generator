@@ -8,7 +8,6 @@
   <img src="https://img.shields.io/badge/cvxpylayers-0.1+-4CAF50" alt="cvxpylayers">
   <img src="https://img.shields.io/badge/CUDA-11.8+-76B900" alt="CUDA 11.8+">
   <img src="https://img.shields.io/badge/pytest-7.0+-0A9EDC" alt="pytest 7.0+">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License MIT">
 </p>
 
 <p align="center">
