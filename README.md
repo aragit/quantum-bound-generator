@@ -76,6 +76,20 @@ $$
 By applying the **Implicit Function Theorem** to this system, we calculate the exact total derivative at the boundary, yielding the Jacobian $\frac{\partial A^{\ast}}{\partial \hat{A}}$.
 
 When `loss.backward()` is called, the gradient passes seamlessly through the KKT equilibrium. The network learns exactly how its raw logits violated physics and shifts its latent space accordingly.
+
+---
+
+## Architecture: The Single Substrate
+
+QBMG eliminates the discrete API barrier between the neural network and the physics engine. Both exist on the same mathematical substrate.
+
+| Component | Description |
+|-----------|-------------|
+| **Neural Backbone** | Probabilistic generator producing unconstrained bond-logit adjacency matrices. Modular: swap in SE(3)-Equivariant GNNs or text-conditioned backbones (e.g., MedGemma-4B-IT). |
+| **Differentiable Physics Core** | Intercepts raw logits and projects them onto the boundary of a physically valid geometric space via convex optimization. |
+| **Implicit Gradient Solver** | Uses the Implicit Function Theorem (IFT) to analytically compute the exact backward gradient of the constraint, shaping the network's latent space during training. |
+
+
 ---
 
 ## System Requirements
@@ -89,7 +103,7 @@ When `loss.backward()` is called, the gradient passes seamlessly through the KKT
 
 ## Installation
 
-We recommend an isolated virtual environment.
+I recommend an isolated virtual environment.
 
 ```bash
 # 1. Clone the repository
