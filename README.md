@@ -1,4 +1,4 @@
-<h1 align="center">Type 6 Quantum-Bound Molecular Generator (QBMG)</h1>
+<h1 align="center">Quantum-Bound Molecular Generator (QBMG)</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-blue" alt="Python 3.10+">
@@ -14,6 +14,7 @@
 <p align="center">
   <b>A fully differentiable, embedded neuro-symbolic architecture for zero-waste molecular generation.</b>
 </p>
+
 ---
 
 ## Overview
