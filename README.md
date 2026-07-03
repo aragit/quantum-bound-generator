@@ -173,9 +173,6 @@ quantum-bound-generator/
 └── README.md
 ```
 
-## Acknowledgments
-
-Special thanks to the Barnabus Task Force Team for fostering the environment where this architecture was conceived. A specific note of appreciation to Nasrin, whose diligent clinical ML engineering work helped bridge the gap between abstract graph generation and practical, medically viable utility.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
