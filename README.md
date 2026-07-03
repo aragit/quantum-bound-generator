@@ -59,21 +59,21 @@ Where $v_i$ represents the hard valency limits of atom $i$.
 
 Standard Autograd cannot unroll the iterative loops of a convex optimizer without catastrophic memory explosion. Instead, we bypass the loop by differentiating directly at the optimum.
 
-At convergence, the solution $A^{*}$ satisfies the Karush-Kuhn-Tucker (KKT) equilibrium:
+At convergence, the solution $A^{\ast}$ satisfies the Karush-Kuhn-Tucker (KKT) equilibrium:
 
 $$
-\nabla_{A} \mathcal{L}(A^{*}, \lambda^{*}, \nu^{*}) = 0
-$$
-
-$$
-\lambda^{*} \odot g(A^{*}) = 0
+\nabla_{A} \mathcal{L}(A^{\ast}, \lambda^{\ast}, \nu^{\ast}) = 0
 $$
 
 $$
-g(A^{*}) \le 0, \quad \lambda^{*} \ge 0, \quad h(A^{*}) = 0
+\lambda^{\ast} \odot g(A^{\ast}) = 0
 $$
 
-By applying the **Implicit Function Theorem** to this system, we calculate the exact total derivative at the boundary, yielding the Jacobian $\frac{\partial A^{*}}{\partial \hat{A}}$.
+$$
+g(A^{\ast}) \le 0, \quad \lambda^{\ast} \ge 0, \quad h(A^{\ast}) = 0
+$$
+
+By applying the **Implicit Function Theorem** to this system, we calculate the exact total derivative at the boundary, yielding the Jacobian $\frac{\partial A^{\ast}}{\partial \hat{A}}$.
 
 When `loss.backward()` is called, the gradient passes seamlessly through the KKT equilibrium. The network learns exactly how its raw logits violated physics and shifts its latent space accordingly.
 ---
